@@ -1,0 +1,48 @@
+status "Tapping kegs"
+tap caskroom/cask
+
+status "Checking for formulae updates"
+update
+
+status "Checking for outdated formulae"
+outdated
+
+status "Installing updated UNIX tools"
+install coreutils
+install binutils
+install diffutils
+install findutils --default-names
+install gnu-indent --default-names
+install gnu-sed --default-names
+install gnu-tar --default-names
+install gnu-which --default-names
+install gnutls --default-names
+install grep --default-names
+install gzip
+install wdiff --with-gettext
+
+status "Installing updated bash"
+install bash
+warn "\n\nRun \`brew info bash\` for complete installation instructions\n\n"
+
+status "Installing aux. development software"
+install file-formula
+install git
+install less
+install openssh --with-brewed-openssl
+install rsync
+install unzip
+#install android-sdk
+install julia
+
+status "Installing personal tools"
+install bash-completion2
+install awscli
+install heroku-toolbelt
+install ansible
+install docker
+install docker-machine
+install git-crypt
+install z
+
+cleanup

@@ -1,0 +1,47 @@
+tap caskroom/versions
+tap caskroom/fonts
+
+status "Installing productivity apps"
+cask install alfred
+cask alfred link
+cask install google-drive
+cask install selfcontrol
+
+status "Installing utils"
+cask install flux
+cask install smcfancontrol
+cask install the-unarchiver
+#cask install java7
+#cask install utorrent
+cask install skype
+
+status "Installing media apps"
+cask install vlc
+cask install spotify
+cask install soundcleod
+
+status "Installing developer apps"
+cask install atom
+cask install google-chrome
+cask install firefox
+cask install virtualbox
+#cask install github
+cask install spectacle
+
+status "Installing University apps"
+#cask install rstudio
+#cask install mactex
+#cask install juno
+
+status "Installing Work apps"
+#cask install hipchat
+cask install adobe-creative-cloud
+
+status "Installing fonts"
+cask install font-source-code-pro
+cask install font-source-sans-pro
+cask install font-source-serif-pro
+cask install font-open-sans
+cask install font-open-sans-condensed
+
+cask cleanup

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -e
+set -o pipefail
+#set -x
+
+TEST_DIR=$(mktemp -d -t dotfiles-test-XXXXXXXXX)
+HOME=$TEST_DIR
+
+echo $TEST_DIR
+echo ''
+# Test script
+./install "$TEST_DIR"
+
+echo $@;
+
+echo "You can now inspect the results at: $TEST_DIR"
+read
+
+trap 'rm -rf $TEST_DIR' EXIT
+rm -rf $TEST_DIR
