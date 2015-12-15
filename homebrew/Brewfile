@@ -35,6 +35,7 @@ install rsync
 install unzip
 #install android-sdk
 install julia
+install fuse
 
 status "Installing personal tools"
 install bash-completion2
