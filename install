@@ -2,7 +2,7 @@
 shopt -s extglob
 shopt -s nullglob
 
-: ${TOPICS:="homebrew bash aliases osx"}
+: ${TOPICS:="homebrew bash aliases git nvm ruby osx"}
 DEST_DIR="$1"
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -28,7 +28,7 @@ EOF
 echo "source ${DEST_DIR}/.path" >> $BASHRC_BUFFER
 echo "source ${DEST_DIR}/.env" >> $BASHRC_BUFFER
 
-for topic in $ALL_TOPICS; do
+for topic in $TOPICS; do
    (
       status "Starting $topic setup"
       INSTALLER="$SRC_DIR/$topic/install.sh"
