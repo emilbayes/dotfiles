@@ -26,6 +26,7 @@ cask install firefox
 cask install virtualbox
 #cask install github
 cask install spectacle
+cask install julia
 
 status "Installing University apps"
 #cask install rstudio
