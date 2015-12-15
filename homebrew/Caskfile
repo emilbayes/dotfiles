@@ -27,6 +27,7 @@ cask install virtualbox
 cask install spectacle
 cask install julia
 cask install osxfuse
+cask install keepassx
 
 status "Installing University apps"
 #cask install rstudio
