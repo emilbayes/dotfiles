@@ -3,7 +3,6 @@ tap caskroom/fonts
 
 status "Installing productivity apps"
 cask install alfred
-cask alfred link
 cask install google-drive
 cask install selfcontrol
 
