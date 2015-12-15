@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Not sure why, but sometimes after sleep, bluetooth seems to have died.
+# This reloads the kernel extension
+sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport

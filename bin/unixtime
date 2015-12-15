@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Print the time since epoc for date $1
+date -j -f "%s" $1
