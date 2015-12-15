@@ -1,5 +1,6 @@
 status "Tapping kegs"
 tap caskroom/cask
+tap homebrew/dupes
 
 status "Checking for formulae updates"
 update
