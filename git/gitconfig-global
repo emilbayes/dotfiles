@@ -1,0 +1,78 @@
+[user]
+  name = Emil Bay
+  email = github@tixz.dk
+
+#Look up passwords in OS X Keychain
+[credential]
+  helper = osxkeychain
+[alias]
+#Retrofitted commands
+  ammend = commit --amend --reedit-message=HEAD
+  count   = shortlog --summary --numbered
+  status = status --short --branch
+  undo = reset --soft HEAD^
+  nuke = reset --hard HEAD^
+  abort-merge = reset --hard HEAD
+#Custom commands. See dotfiles/bin/
+  promote = !git-promote
+  wtf     = !git-wtf
+  rank-contributors = !git-rank-contributors
+  delete-local-merged = !git-delete-local-merged
+  track = !git-track
+  dotfiles = !git-dotfiles
+#Short-hands
+  co = checkout
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  l = pull --prune
+  p = push origin HEAD
+  d = diff
+  c = commit
+  ca = commit --all
+  b = branch
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = "atom --wait"
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[pull]
+  rebase = true
+[merge]
+  tool = sublimerge
+[mergetool]
+  keepBackup = false
+[diff]
+  tool = sublimerge
+[difftool]
+  prompt = false
+[help]
+  autocorrect = 1
+[push]
+  # See `git help config` (search for push.default)
+  # for more information on different options of the below setting.
+  #
+  # Setting to git 2.0 default to surpress warning message
+  default = simple
+  # Always push tags as well
+  followTags = true
+
+[mergetool "sublimerge"]
+  cmd = subl --new-window --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+  trustExitCode = false
+
+[difftool "sublimerge"]
+  cmd = subl --new-window --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+
+[url "git@github.com:"]
+#Allows for the shorthand `git clone gh:emilbayes/dotfiles`
+  insteadof = gh:
