@@ -21,6 +21,7 @@ install grep --with-default-names
 install gzip
 install wdiff --with-default-names
 install xz
+install watch
 
 status "Installing updated bash"
 install bash
