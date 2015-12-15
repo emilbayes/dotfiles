@@ -10,7 +10,6 @@ outdated
 status "Installing updated UNIX tools"
 install coreutils
 install binutils
-install diffutils
 install findutils --default-names
 install gnu-indent --default-names
 install gnu-sed --default-names
