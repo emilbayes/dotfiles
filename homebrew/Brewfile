@@ -35,7 +35,6 @@ install openssh --with-brewed-openssl
 install rsync
 install unzip
 #install android-sdk
-install osxfuse
 
 status "Installing personal tools"
 install bash-completion2
