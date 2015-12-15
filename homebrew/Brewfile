@@ -10,15 +10,15 @@ outdated
 status "Installing updated UNIX tools"
 install coreutils
 install binutils
-install findutils --default-names
-install gnu-indent --default-names
-install gnu-sed --default-names
-install gnu-tar --default-names
-install gnu-which --default-names
-install gnutls --default-names
-install grep --default-names
+install findutils --with-default-names
+install gnu-indent --with-default-names
+install gnu-sed --with-default-names
+install gnu-tar --with-default-names
+install gnu-which --with-default-names
+install gnutls --with-default-names
+install grep --with-default-names
 install gzip
-install wdiff --with-gettext
+install wdiff --with-default-names
 
 status "Installing updated bash"
 install bash
