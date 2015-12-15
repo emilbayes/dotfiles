@@ -34,7 +34,7 @@ status "Installing University apps"
 #cask install juno
 
 status "Installing Work apps"
-#cask install hipchat
+cask install slack
 cask install adobe-creative-cloud
 
 status "Installing fonts"
