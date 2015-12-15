@@ -6,11 +6,9 @@ then
    source $DIR/.env
    source $DIR/.bashrc
 
-   nvm install 0.12
-   nvm install iojs
-
-   nvm alias node 0.12
-   nvm alias default iojs
+   nvm install 5.1
+   nvm alias latest 5.1
+   nvm alias default latest
 
    nvm use default
    status "Updating npm"
