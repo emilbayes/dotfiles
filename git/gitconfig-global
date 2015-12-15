@@ -19,7 +19,7 @@
   rank-contributors = !git-rank-contributors
   delete-local-merged = !git-delete-local-merged
   track = !git-track
-  dotfiles = !git-dotfiles
+  credit = !git-credit
 #Short-hands
   co = checkout
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -42,31 +42,12 @@
   whitespace = nowarn
 [pull]
   rebase = true
-[merge]
-  tool = sublimerge
-[mergetool]
-  keepBackup = false
-[diff]
-  tool = sublimerge
-[difftool]
-  prompt = false
 [help]
   autocorrect = 1
 [push]
-  # See `git help config` (search for push.default)
-  # for more information on different options of the below setting.
-  #
-  # Setting to git 2.0 default to surpress warning message
   default = simple
   # Always push tags as well
   followTags = true
-
-[mergetool "sublimerge"]
-  cmd = subl --new-window --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
-  trustExitCode = false
-
-[difftool "sublimerge"]
-  cmd = subl --new-window --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
 
 [filter "media"]
   required = true
