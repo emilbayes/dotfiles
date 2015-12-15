@@ -1,0 +1,11 @@
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-k cmd-y': 'editor:fold-selection'
+  'ctrl-enter': 'hydrogen:run'
+  'ctrl-a': 'fuzzy-finder:toggle-file-finder'
+
+
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+  'ctrl-s': 'command-palette:toggle'
+
+'atom-text-editor':
+  'alt-f': 'unset!'

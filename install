@@ -2,7 +2,7 @@
 shopt -s extglob
 shopt -s nullglob
 
-: ${TOPICS:="homebrew bash aliases git nvm ruby bin osx"}
+: ${TOPICS:="homebrew bash aliases git nvm ruby bin atom osx"}
 DEST_DIR="$1"
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

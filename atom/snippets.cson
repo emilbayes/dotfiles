@@ -1,0 +1,31 @@
+'.source.js':
+  'CommonJS require':
+    'prefix': 'req'
+    'body': 'const ${1:module} = require(\'${1:module}\')$0'
+  'Function':
+    'prefix': 'fun'
+    'body': 'function ${1:function_name} (${2:argument}) {\n\t${0:// body...}\n}'
+  'Tape test':
+    'prefix': 'test'
+    'body': 'test(\'$1\', function (assert) {\n\tassert.ok($0)\n\tassert.end()\n})'
+  'Transform stream':
+    'prefix': 'transform'
+    'body': 'new stream.Transform({${1:\n\tobjectMode: true,}${2:\n\ttransform (obj, _, cb) \{${3:\n\t\t//body...}\n\t\t$0cb()\}\n\t}\n})'
+  'Callback':
+    'prefix': 'cb'
+    'body': 'function (err, ${1:res}) {\n\tif (err) return console.error(err)\n\t$0\n}'
+  'log':
+    'prefix': 'log'
+    'body': 'console.log($1)$0'
+  'warn':
+    'prefix': 'warn'
+    'body': 'console.warn($1)$0'
+  'error':
+    'prefix': 'error'
+    'body': 'console.error($1)$0'
+  'inspect':
+    'prefix': 'inspect'
+    'body': 'console.dir($0, { color: true, depth: null })'
+  'self':
+    'prefix': 'self'
+    'body': 'const self = this'

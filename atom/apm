@@ -1,0 +1,33 @@
+# Languages
+language-cypher
+language-docker
+language-julia
+language-latex
+language-pgsql
+latex
+
+# Coding ergonomics
+linter
+linter-js-standard
+markdown-table-formatter
+pretty-json
+sort-lines
+standard-formatter
+toggle-quotes
+docblockr
+emmet
+
+# IDE ergonomics
+new-file-plus
+nuclide-move-pane
+zentabs
+
+pigments
+Hydrogen
+atom-terminal
+git-plus
+git-projects
+editor-stats
+
+# IDE Chrome
+travis-ci-status

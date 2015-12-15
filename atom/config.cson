@@ -1,0 +1,32 @@
+"*":
+  welcome:
+    showOnStartup: false
+  Hydrogen: {}
+  docblockr: {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "linter-jsonlint": {}
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    autoIndentOnPaste: false
+  core:
+    destroyEmptyPanes: false
+    disabledPackages: []
+  "travis-ci-status":
+    useTravisCiPro: true
+  "git-projects":
+    rootPath: "~/Development/"
+    sortBy: "Latest modification date"
+  linter:
+    showErrorPanel: false
+  "markdown-table-formatter": {}
+  "toggle-quotes": {}
+  "linter-js-standard":
+    lintMarkdownFiles: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  zentabs:
+    neverCloseUnsaved: true
+  latex: {}
