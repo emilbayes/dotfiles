@@ -19,6 +19,7 @@ install gnutls --with-default-names
 install grep --with-default-names
 install gzip
 install wdiff --with-default-names
+install xz
 
 status "Installing updated bash"
 install bash
