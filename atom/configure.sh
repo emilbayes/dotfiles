@@ -2,7 +2,7 @@ if [ -f $(which atom) ]
 then
    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-   eval "$(sed -E 's/^[a-z]/apm install &/' $DIR/apm)"
+   eval "$(sed -e 's/^[a-z].+/apm install &/' $DIR/apm)"
 
    mkdir ~/.atom
    cp $DIR/keymap.cson $DIR/snippets.cson $DIR/config.cson ~/.atom
