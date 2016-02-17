@@ -42,6 +42,8 @@
   whitespace = nowarn
 [pull]
   rebase = true
+[merge]
+  ff = only
 [help]
   autocorrect = 1
 [push]
