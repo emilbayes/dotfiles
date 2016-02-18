@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+var punycode = require('punycode')
+
+process.argv.slice(2)
+  .map(punycode.toASCII.bind(punycode))
+  .forEach(function (str) {
+    process.stdout.write(str + '\n')
+  })
