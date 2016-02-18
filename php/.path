@@ -1,0 +1,1 @@
+export PATH="$(brew --prefix php70)/bin:$PATH"
