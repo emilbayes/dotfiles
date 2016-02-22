@@ -6,6 +6,7 @@ language-julia
 language-latex
 language-nginx
 language-pgsql
+language-r
 latex
 
 # Coding ergonomics
