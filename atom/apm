@@ -1,8 +1,10 @@
 # Languages
 language-cypher
 language-docker
+language-ini
 language-julia
 language-latex
+language-nginx
 language-pgsql
 latex
 
