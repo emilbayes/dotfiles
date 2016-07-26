@@ -50,7 +50,8 @@
   default = simple
   # Always push tags as well
   followTags = true
-
+[diff]
+  compactionHeuristic = 1
 [filter "media"]
   required = true
   clean = git media clean %f
