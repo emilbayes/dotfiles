@@ -6,6 +6,7 @@
 [credential]
   helper = osxkeychain
 [alias]
+  git = !exec git
 #Retrofitted commands
   ammend = commit --amend --reedit-message=HEAD
   count   = shortlog --summary --numbered
