@@ -1,44 +1,40 @@
 tap caskroom/versions
 tap caskroom/fonts
 
-status "Installing productivity apps"
+echo "Installing productivity apps"
 cask install alfred
 cask install google-drive
 cask install selfcontrol
 
-status "Installing utils"
+echo "Installing utils"
 cask install flux
 cask install smcfancontrol
 cask install the-unarchiver
-#cask install java7
-#cask install utorrent
-cask install skype
 
-status "Installing media apps"
+echo "Installing media apps"
 cask install vlc
 cask install spotify
 cask install soundcleod
 
-status "Installing developer apps"
+echo "Installing developer apps"
 cask install google-chrome
 cask install firefox
 cask install virtualbox
-#cask install github
 cask install spectacle
-cask install julia
 cask install osxfuse
 cask install keepassx
+cask install docker
 
-status "Installing University apps"
+echo "Installing University apps"
 #cask install rstudio
 #cask install mactex
 #cask install juno
 
-status "Installing Work apps"
-cask install slack
-cask install adobe-creative-cloud
+echo "Installing Work apps"
+#cask install slack
+#cask install adobe-creative-cloud
 
-status "Installing fonts"
+echo "Installing fonts"
 cask install font-source-code-pro
 cask install font-source-sans-pro
 cask install font-source-serif-pro

@@ -1,5 +1,5 @@
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 #bash-completion2
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
